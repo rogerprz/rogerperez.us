@@ -1,182 +1,220 @@
-body {
-}
-.name-animation {
-  display:inline-block;
-  padding:25px;
-  border-style: solid;
-  border-width: 5px;
-  color:black;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAMROGER</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="theme.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--googleapis analytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-103146066-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
 
 
-#titlediv {
-  padding-top:85px;
-  height:260px;
-  color: #fff;
-  background-color: #C11A1A;
-  text-align:center;
-  border-width: 2px;
-}
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar" style="display:inline-block">
+      <li><a href="#about">
+        <span>About</span></a></li>
+      <li><a href="#portfolio">
+        <span>Portfolio</span></a></li>
+      <li>
+        <a href="#contact">
+          <span>Contact</span></a></li>
+        </ul>
+  </div>
+  </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+</nav>
+<div id="titlediv" class="container-fluid" >
+ <h1 id="title" ><a href="http://www.iamroger.us/" class="iamroger" >
+<div class="name-animation">IAMROGER</div></a>
+   </h1></div>
+ <!--Beginning of about me-->
+<section>
+<div id="about" class="container-fluid">
+  <div class="row">
+<!--About me section-->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <h1 class="aboutmehead text-center"><u> About Me </u></h1>
+  <p id="pabout">Roger is a technology enthusiast with a background of a Technical Account Manager for SaaS property management software. Currently learning Front End Development from <a style="color:red"class="" target="_blank" href="https://www.freecodecamp.org/"><u>freeCodeCamp</u></a> which will provide a Certificate once completed. I am enthusiastic, life long learner, and a play hard work harder mentality. Currently I am seeking an entry level Web Developer or Quality Assurance Engineer appenticeship to continue obtaining knowledge through hands-on experience.</p>
+<br>
+   <h4 id="inprogressabout" class="aboutmehead">In Progress</h4>
+      <li> Front-End Web Development Certificate (freeCodeCamp).</li>
+  <li> Web Developer Certificate (Lynda.com).</li>
+  <li> Software QA Engineer Certificate (Lynda.com).</li>
+  <li> HTML & CSS-From Novice to Professional Certificate (Udemy.com).</li>
 
-/*Beginning of ABOUT ME Section*/
-#about {
-  padding:50px;
-  height:100%;
-  margin: auto;
-  color: #fff;
-  background-color: #2B2B2B;
-}
-.aboutmehead{
-  text-transform:uppercase;
-}
-#pabout{
-  text-align:justify;
-  padding-top:10px;
-}
-#inprogressabout{
-  padding-top:5px
-}
-#education{
-  padding-top:20px;
-}
-/*right-side of about me section*/
-#myphoto{
-  max-width:450px;
-  display: block;
-  margin: auto;
-  border-radius:50%;
-  border: 7px solid #ECECEA;
-}
+  <h4 id="education" class="aboutmehead">Education | Certificates</h4>
+    <li>A.S in Computer Information Systems-Santa Barbara City College (May 2017)
+  </li>
+    <li>Access SQL Professional Certification-SBCC (Dec 2016)
+  </li>
+    <li>B.A in Sociology-UC Santa Barbara (2013)
+  </li>
+    </div>
+<!--Picture column with circle display -->
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <h2> </h2>
+    <div class="img-responsive"> <img src="https://goo.gl/YsULrw" id="myphoto" class="img-responsive img-circle" alt="Standing at top of a rock during a Morro Bay hike."></div>
+<!--Other non-gif pic src="https://goo.gl/g922mK"-->
+</div>
+  </div>
+  </div>
+  </section>
 
-/*Beginning of projects CSS */
-#portfolio {
-  padding:50px;
-  margin:auto;
-  height:100%;
-  color: #2B2B2B;
-  background-color:#C11A1A;
-}
+ <!--Beginning of Projects Section-->
+<section id="projectsection">
+  <div id="portfolio" class="container-fluid">
+  <div class="row">
+  <h1 id="projecttitle" class="col-md-12 text-center"> Projects Under Construction</h1>
+<!--Projects begin  -->
+  <section class="col-md-4 col-sm-6 col-xs-12 text-center">
+    <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://github.com/rogercodes1/Portfolio/blob/master/webpagepic.JPG?raw=true" class="webpagepic">
+      </div>
+        <div class="middle"><div class="viewproject"><a href="#" class="img-responsive text-color: white">View Project </a></div>
+    </div>
+        </div>
+    <div class="project-title">Portfolio Website</div>
+      <div class="project-description">Project One Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+    <div class="project-languages"><footer>HTML | CSS</footer></div>
+    </div>
+  </section>
 
-#projecttitle{
-  text-align: center;
-  font-weight:bold;
-  text-transform: uppercase;
-  padding:10px 0px 80px 0px;
-}
-.webpagepic{
-  max-width: 100%;
-  max-height: 100%;
-  height:188px;
-  width: 330px;
-}
-.work-project{
-  max-width:350px;
-}
-.project-image-container{
-  border: 5px solid #3B3738;
-  background-color: #A93226;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-.project-image{
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.project-image:hover .image{
-  opacity: 0.3;
-}
-.work-project:hover .middle {
-  opacity: 0.3;
-}
-.viewproject {
-  background-color: white;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-.project-title{
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 1.2px;
-  padding:5px 0px 10px 0px;
-  font: bold;
-}
-.project-description{
-  font-family: Sans-serif;
-  font-size: 15px;
-  padding:10px;
-}
-.project-languages{
-  padding:5px 0px 15px 0px;
-  color: grey;
-  font-size: 13px;
-}
+ <section class="col-md-4 col-sm-6 col-xs-12 text-center">
+    <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://goo.gl/ZvaWjH" class="image">
+      </div>
+        <div class="middle"><div class="viewproject"><a href="#" class="color: white">View Project </a></div>
+    </div>
+        </div>
+      <div class="project-title">Title Coming Soon </div>
+      <div class="project-description">2. Project. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+      <div class="project-languages">HTML | CSS</div>
+    </div>
+  </section>
 
-/*Contact Section begins*/
-.contact {
-  padding:50px;
-  height:100%;
-  color: #fff;
-  background-color:
-    #2B2B2B;
-}
+ <section class="col-md-4 col-sm-6 col-xs-12 text-center">
+    <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://goo.gl/ZvaWjH" class="image">
+      </div>
+        <div class="middle"><div class="viewproject"><a href="#" class="color: white">View Project </a></div>
+    </div>
+        </div>
+      <div class="project-title">Title Coming Soon </div>
+      <div class="project-description">3 Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+      <div class="project-languages">HTML | CSS</div>
+    </div>
 
-.contacthead{
-  text-align: center;
-  text-transform:uppercase;
-}
-#socialicons{
-  display: block;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 15px;
-}
+  </section>
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
+<section class="col-md-4 col-sm-6 col-xs-12 text-center">
+   <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://goo.gl/ZvaWjH" class="image">
+      </div>
+        <div class="middle"><div class="viewproject"><a href="#" class="color: white">View Project </a></div>
+    </div>
+        </div>
 
-/* Github */
-.fa-github {
-    background: #333;
-    color: white;
-}
-/* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-/* LinkedIn */
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-#thispagepara{
-  text-align: center;
-  font-size:20px;
-  letter-height: 1px;
-}
+      <div class="project-title">Title Coming Soon </div>
+      <div class="project-description">4 Project Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+      <div class="project-languages">HTML | CSS</div>
+    </div>
+  </section>
 
-/*animation section*/
+<section class="col-md-4 col-sm-6 col-xs-12 text-center">
+    <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://goo.gl/ZvaWjH" class="image">
+      </div>
+        <div class="middle"><div class="viewproject"><a href="#" class="color: white">View Project </a></div>
+    </div>
+        </div>
+      <div class="project-title">Title Coming Soon </div>
+      <div class="project-description">5. Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+      <div class="project-languages">HTML | CSS</div>
+    </div>
+
+  </section>
+<section class="col-md-4 col-sm-6 col-xs-12 text-center">
+    <div class="work-project">
+      <div class="project-image-container">
+     <div class="project-image">
+ <img src="https://goo.gl/ZvaWjH" class="image">
+      </div>
+        <div class="middle">
+          <div class="viewproject"><a href="#" class="color: white">View Project </a></div>
+    </div>
+        </div>
+      <div class="project-title">Title Coming Soon </div>
+      <div class="project-description">6 Project. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+      <div class="project-languages">HTML | CSS</div>
+    </div>
+
+  </section>
+</div>
+  </div>
+</section>
+<section class="contact">
+<div  class="container-fluid">
+  <div class="row">
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+    <h1 class="contacthead"> Keep Connected</h1>
+
+  <div id="socialicons">
+
+ <a href="https://github.com/rogercodes1" target="_blank"><span class="fa fa-github"></span></a>
+
+ <a href="https://www.linkedin.com/in/rogerperez1" target="_blank">
+   <span class="fa fa-linkedin" ></span></a>
+  <a href="https://twitter.com/iRogerSB" target="_blank">
+    <span class="fa fa-twitter"></span>
+  </a>
+    </div>
+    </div>
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <h1 class="contacthead"> About this page</h1>
+    <p id="thispagepara"> Page was created with <i class="glyphicon glyphicon-headphones"></i><i class="fa fa-music"></i>and tons of late nights drinking<i class="fa fa-coffee" aria-hidden="true">. </i>Thank you for stopping by!!! </p>
+  </div>
+
+</div>
+  </div>
+</section>
+
+</body>
