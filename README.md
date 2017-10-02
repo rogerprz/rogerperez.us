@@ -1,2 +1,0 @@
-# rogerperez.us
-rogerperez.us
