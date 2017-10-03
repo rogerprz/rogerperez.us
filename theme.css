@@ -95,6 +95,7 @@ body {
 #singleprojects:hover img{
     opacity: 0.6;
     filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
 .project-image:hover .image{
   opacity: 0.3;
 }
