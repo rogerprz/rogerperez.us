@@ -77,7 +77,15 @@ body {
   border: 5px solid #3B3738;
   background-color: #A93226;
 }
-
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 33%;
+  left:40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 .project-image{
   opacity: 1;
   display: block;
@@ -99,6 +107,7 @@ body {
 .work-project:hover .middle {
   opacity: 0.3;
 }
+<<<<<<< HEAD
 
 .middle {
   transition: .5s ease;
@@ -110,6 +119,14 @@ body {
   -ms-transform: translate(-50%, -50%)
 }
 */
+=======
+.viewproject {
+  background-color: white;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+>>>>>>> parent of 06d9db9... removing transition
 .project-title{
   text-transform: uppercase;
   font-size: 17px;
