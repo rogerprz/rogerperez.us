@@ -92,14 +92,11 @@ body {
   font-size: 16px;
   padding: 16px 32px;
 }
-#singleprojects:hover img{
-    opacity: 0.6;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-  }
+
 .project-image:hover .image{
   opacity: 0.3;
 }
-/*.work-project:hover .middle {
+.work-project:hover .middle {
   opacity: 0.3;
 }
 
