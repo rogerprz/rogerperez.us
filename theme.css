@@ -107,7 +107,7 @@ body {
 .work-project:hover .middle {
   opacity: 0.3;
 }
-<<<<<<< HEAD
+
 
 .middle {
   transition: .5s ease;
@@ -118,15 +118,13 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-*/
-=======
+
 .viewproject {
   background-color: white;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
->>>>>>> parent of 06d9db9... removing transition
 .project-title{
   text-transform: uppercase;
   font-size: 17px;
