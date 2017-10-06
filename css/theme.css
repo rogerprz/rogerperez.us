@@ -65,8 +65,9 @@ h1{
 }
 .singleprojects{
   margin:auto;
-  left:5%;
+  left:4%;
   text-align: center;
+  font:center;
 }
 #projecttitle{
   text-align: center;
