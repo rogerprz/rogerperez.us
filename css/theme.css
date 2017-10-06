@@ -8,7 +8,11 @@ body {
   color:black;
 }
 
+h1{
+  text-align:center;
+  text-transform:uppercase;
 
+}
 #titlediv {
   padding-top:85px;
   height:260px;
@@ -27,7 +31,7 @@ body {
   background-color: #2B2B2B;
 }
 .aboutmehead{
-  text-transform:uppercase;
+  font-family: 'Caveat', cursive;
 }
 #pabout{
   text-align:justify;
@@ -59,9 +63,10 @@ body {
 #projectsection{
   margin:auto;
 }
-#singleprojects{
+.singleprojects{
   margin:auto;
   left:5%;
+  text-align: center;
 }
 #projecttitle{
   text-align: center;
@@ -154,8 +159,6 @@ body {
 }
 
 .contacthead{
-  text-align: center;
-  text-transform:uppercase;
 }
 #socialicons{
   display: block;
