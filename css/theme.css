@@ -159,8 +159,6 @@ h1{
     #2B2B2B;
 }
 
-.contacthead{
-}
 #socialicons{
   display: block;
   margin: auto;
@@ -203,4 +201,11 @@ h1{
   letter-height: 1px;
 }
 
-/*animation section*/
+/*footer section*/
+
+footer{
+  text-align: center;
+  font: 2em;
+  color: white;
+  background:#2B2B2B;
+}
