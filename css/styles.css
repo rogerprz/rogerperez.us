@@ -1,3 +1,10 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
 /* Global styles
 ------------------------------------*/
 /* border box fix */
@@ -7,9 +14,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3{
   margin: 0;
 }
 a {
@@ -18,30 +38,28 @@ a {
 a:hover {
     text-decoration: none;
 }
-h1, h2 {
-  font-family: 'Caveat', cursive;
-  font-weight: 400;
-  font-style: bold;
-}
-
-h1 {
-  font-size: 80px;
-}
-h2 {
-  font-size: 40px;
-  margin-top: 0;
-}
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
   padding: 50px;
   overflow: hidden;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
 .column-narrow {
   width: 35%;
   float: left;
-  padding-right: 3%;
+  padding-right: 3%; /*need to remove to fix round image*/
   min-height: 175px;
 }
 .column-wide {
@@ -54,27 +72,34 @@ h2 {
 
 /* Header & Footer
 ------------------------------------*/
-header,
-footer {
+header, footer {
   background: #2B2D42;
   color: #8D99AE;
 }
-header h1,
-header h2 {
+/*header*/
+header{
+  padding-top:50px;
+  position:relative;
+}
+header h1, header h2 {
     color: #EDF2F4;
     margin: 0;
 }
+.profile-img {
+  /*width: 300px;*/
+  border-radius: 50%;
 
 /* Header styles only */
 header {
   /*text-align: center;*/
 }
 .profile-img {
-  /*width: 300px;*/
   border-radius: 50%;
-  /*float: left;*/
-  /*margin-right: 30px;*/
-
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Footer styles only */
@@ -87,16 +112,48 @@ footer {
 }
 
 
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 
 /* Work Experience
-------------------------------------*/
+-------------------------*/
 .work {
-    background: #EDF2F4;
+  background: #EDF2F4;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
 }
 
 
 /* Education
-------------------------------------*/
+-------------------------*/
 .education {
-    background: #8D99AE;
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/toronto.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
 }

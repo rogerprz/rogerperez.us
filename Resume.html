@@ -6,7 +6,7 @@
     <title>Roger Perez | Resume</title>
     <!-- Bootstrap and Font Awesome Style sheets -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700" rel="stylesheet">
@@ -17,7 +17,14 @@
 </head>
 <body>
     <!-- // Intro -->
-    <header>
+    <header id="about">
+      <a href="resumeRoger2017.pdf" download class="btn download">Download PDF</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
         <div class="content-wrap">
             <img class="profile-img column-narrow" src="images/rogerperez.jpg" alt="Roger Perez webpage image">
 
@@ -31,31 +38,32 @@
 
     <main>
         <!-- // Work Experience -->
-        <section class="work">
+        <section id="work" class="work">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
 
                 <!-- Job Details: copy this block to add more positions. -->
+                <!-- Job 1 Details -->
                 <div class="column-narrow">
                     <h3>Front-end Developer & Educator</h3>
-                    <p>Independent / Freelance</p>
+                    <p class="uppercase">Independent / Freelance</p>
                     <p>January 2012 - Present</p>
                 </div>
-                <div class="column-wide">
+
+                <div class="column-wide job-description">
                   <p>Provides various front-end related services ranging from development work, consultations, speaking engagements, corporate training, workshops and online courses.</p>
                   <p>See more at <a href="http://rogerperez.us">rogerperez.us</a>.</p>
                 </div>
 
-                <!-- Job Details -->
+                <!-- Job 2 Details -->
                 <div class="column-narrow">
                     <h3>Director of Curriculum</h3>
-                    <p>Ladies Learning Code</p>
+                    <p class="uppercase">Local Market Launch</p>
                     <p>July 2014 - February 2016</p>
                 </div>
 
-                <div class="column-wide">
+                <div class="column-wide job-description">
                     <p>Created and managed all adult focused curriculum, instructor training and tech related strategies and duties.</p>
-
                     <p>Key contributions:</p>
                     <ul>
                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
@@ -67,46 +75,56 @@
                     </ul>
                 </div>
 
-                <!-- Job Details -->
+                <!-- Job 3 Details -->
                 <div class="column-narrow">
                     <h3>Lead Front-End Developer</h3>
-                    <p>Field ID</p>
+                    <p class="uppercase">Field ID</p>
                     <p>March 2013 - February 2014</p>
                 </div>
-                <div class="column-wide">
-                    <p>Lead the front-end development for in-house safety inspection software.</p>
+                <div class="column-wide job-description">
+                    <p >Lead the front-end development for in-house safety inspection software.</p>
                     <p>Key contributions:</p>
                     <ul>
-                      <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                      <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                      <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
                     </ul>
+
+                    <p>See my complete work history on <a href="https://www.linkedin.com/in/rogerperez1/" target="_blank">LinkedIn</a>.</p>
+
                 </div>
             </div>
         </section>
 
 
         <!-- // Education -->
-        <section class="education">
-            <div id="educationsection" class="content-wrap">
+        <section id="education"class="education">
+            <div id="" class="content-wrap">
                 <h2>Education</h2>
 
                 <!-- School details: copy this block to add more schools. -->
+
+                <!-- School 1 details. -->
                 <h3>Santa Barbara City College- Santa Barbara, CA</h3>
                 <h4>A.S in Computer Information Systems</h4>
                 <p>Graduated May 2017</p>
 
+                <!-- School 2 details. -->
                 <h3>University of California, Santa Barbara</h3>
                 <h4>B.A. in Sociology, 2008-2013</h4>
                 <p>Member of Professional Business Fraternity Delta Sigma Pi</p>
 
+                <!-- School 3 details. -->
+                <h3>University of California, Santa Barbara</h3>
+                <h4>B.A. in Sociology, 2008-2013</h4>
+                <p>Member of Professional Business Fraternity Delta Sigma Pi</p>
 
             </div>
         </section>
     </main>
 
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
         <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
 
@@ -114,9 +132,8 @@
             <div class="contact-info">
                 <a href="mailto:rogerperez.us@gmail.com">Gmail</a>
                 <a href="http://rogerperez.us">Portfolio</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
+                <a href="https://twitter.com/christinatruong"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                <a href="https://www.linkedin.com/in/rogerperez1/"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
             </div>
 
             <p>Copyright 2017 by Roger Perez</p>
