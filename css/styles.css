@@ -7,7 +7,7 @@
 
 /* Global styles
 ------------------------------------*/
-/* border box fix */
+/* border box fix -/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -29,11 +29,11 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
-h3{
+h3 {
   margin: 0;
 }
 a {
-    color: #EF233C;
+  color: #EF233C;
 }
 a:hover {
     text-decoration: none;
@@ -41,7 +41,7 @@ a:hover {
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
-  padding: 50px;
+  padding:60px 50px;
   overflow: hidden;
 }
 .uppercase {
@@ -85,9 +85,6 @@ header h1, header h2 {
     color: #EDF2F4;
     margin: 0;
 }
-.profile-img {
-  /*width: 300px;*/
-  border-radius: 50%;
 
 /* Header styles only */
 header {
