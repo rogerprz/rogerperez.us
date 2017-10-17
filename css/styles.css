@@ -56,17 +56,7 @@ a:hover {
   padding: 10px;
   display: inline-block;
 }
-.column-narrow {
-  width: 35%;
-  float: left;
-  padding-right: 3%; /*need to remove to fix round image*/
-  min-height: 175px;
-}
-.column-wide {
-  width: 62%;
-  float: left;
-  min-height: 175px;
-}
+
 
 
 
@@ -179,4 +169,30 @@ p + h3 {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+  
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
 }
