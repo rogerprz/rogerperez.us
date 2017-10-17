@@ -146,10 +146,37 @@ h3 ~ p {
 /* Education
 -------------------------*/
 .education {
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-              url(../images/toronto.jpg) no-repeat fixed;
-  background-size: cover;
+  background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.6)),
+              url(../images/nyc.jpg) no-repeat fixed;
+  background-size: cover;//covers the the whole area (stretches value), essentially cover area.
 }
 p + h3 {
   margin-top: 30px;
+}
+
+/*Tooltop hover for portfolio under construction. Remove once portfolio is ready*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family:sans-serif;
+    font-size:.5em;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
