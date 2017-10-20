@@ -144,7 +144,7 @@ p + h3 {
   margin-top: 30px;
 }
 
-/*Tooltop hover for portfolio under construction. Remove once portfolio is ready*/
+/*Tooltip hover for portfolio under construction. Remove once portfolio is ready*/
 .tooltip {
     position: relative;
     display: inline-block;
@@ -186,7 +186,7 @@ p + h3 {
     float: left;
     padding-left: 20px;
   }
-  
+
 }
 @media (max-width: 899px){
   header {

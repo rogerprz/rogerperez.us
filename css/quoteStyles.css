@@ -1,0 +1,55 @@
+
+html {
+  /*box-sizing: border-box;*/
+    background:grey;
+}
+/**, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+h1{
+  background:blue;
+}
+p{
+  background: pink;
+}
+header{
+  min-height:auto;
+  background: brown;
+}
+
+
+.quote-box{
+  /*text-align:center;*/
+  /*position: relative;*/
+  background: red;
+  /*margin:auto;*/
+  height:300px;
+  /*display: table;
+  vertical-align: middle;*/*/
+}
+.quote-text{
+  background: orange;
+}
+.quote-author{
+  background: green;
+}
+#tweet-quote{
+  background: yellow;
+  /*display:inline-block;*/
+  padding: 20px;
+  /*text-decoration: none;*/
+}
+button{
+  background: blue;
+}
+
+
+
+/*Footer area after quote Randomizer*/
+footer{
+  height:auto;
+  background: lightblue;
+  display:block;
+
+}
