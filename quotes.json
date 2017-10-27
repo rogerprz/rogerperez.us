@@ -1,7 +1,4 @@
-<html>
-<body>
-<pre>
-"
+
 [
   {"quote":"Success is not final; failure is not fatal: It is the courage to continue that counts.",
     "author":"Winston S. Churchill"},
@@ -31,7 +28,4 @@
     "author":"Thomas Jefferson"},
   {"quote":"I find that the harder I work, the more luck I seem to have.",
     "author":"Thomas Jefferson"}
-    ]"
-    </pre>
-    </body>
-</html>
+    ]
