@@ -4,42 +4,68 @@
   <title>Roger Perez | Portfolio</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--custom stylesheets for portfolio-->
-      <link rel="stylesheet" type="text/css" href="css/quoteStyles.css">
       <!--Link to add icon on top of tab-->
       <link rel="icon" href="https://goo.gl/fHYx9q"><!--Geometric panda-->
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <!--Javascript for quote generator-->
-      <script src="quoteGen.js"></script>
+
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+      <!--custom stylesheets for portfolio-->
+      <link rel="stylesheet" type="text/css" href="css/quoteStyles.css">
+      <!--Javascript for quote generator-->
+      <script src="quoteGen.js"></script>
 </head>
 
 <body>
-    <div class="">
-<header>something</header>
-    </div>
+
+<div id="header" >
+  <header class=""></header>
+</div>
+
 <section class="">
-  <div class=""></div>
-  <div class="quote-box">
+  <div class="container">
+  <div class="row">
+
+
+  <div class="quote-box  col-md-3 col-md-offset-3">
     <div class="quote-text">
       <i class="fa fa-quote-left"> </i><span id="text"></span>
+        <p id="textpara">
         Quote generated here.
-        <i class="fa fa-quote-right"> </i><span id="text"></span>
+        <script>
+          var text = '{"employees":[' +
+          '{"firstName":"John","lastName":"Doe" },' +
+          '{"firstName":"Anna","lastName":"Smith" },' +
+          '{"firstName":"Peter","lastName":"Jones" }]}';
+
+          obj = JSON.parse(text);
+          document.getElementById("textpara").innerHTML =
+          obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+
+
+          </script>
+
+        </p>
+        <i class="fa fa-quote-right float-right"> </i><span id="text2"></span>
     </div>
         <div class="quote-author">
         - <span id="author">Temp Author</span>
         </div>
-        <div class="buttons">
+          <div class="buttons">
             <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-twitter fa-2x"></i>
             </a>
-              <button id="getQuote">Generate Quote</button>
+
+              <button id="getQuote"class="btn btn-primary">Generate Quote</button>
+            </div>
+  </div>
+  </div>
+  </div>
 </section>
 <!--footer section begins  -->
 
