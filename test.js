@@ -32,7 +32,7 @@ var quotesList=[
     ]
 
 var ourRequest= new XMLHttpRequest();
-ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json')
+ourRequest.open('GET','http://wwww.rogerperez.us/quotes.json')
 
 ourRequest.onload= function(){
   console.log(ourRequest.responseText);
