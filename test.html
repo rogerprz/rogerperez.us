@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
       <!--Javascript for quote generator-->
-      <script src="test.js"></script>
-      <script src="http://rogerperez.us/quotes.json"></script>
 </head>
-
 <body>
-
-  <div class="quote-box">
-    <div class="quote-text">
-      <i class="fa fa-quote-left"> </i>
+    <div id="quoteBox" class="quote-text">
         <span id="text"></span>
-          <p id="textpara">
-            Quote generated here.
+          <p id="quotePara">
 
 
         </p>
-        <i class="fa fa-quote-right"> </i><span id="text2"></span>
+        <span id="text2"></span>
     </div>
         <div class="quote-author">
         - <span id="author">Temp Author</span>
         </div>
           <div class="button-links">
-            <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-              <i class="fa fa-twitter fa-2x"></i>
-            </a>
 
-              <button id="getQuote"class="btn btn-primary">Generate Quote</button>
-            </div>
-  </div>
-
-<div>
-
-</div>
+          <button id="getQuote"class="btn btn-primary">Get Quote</button>
+          </div>
+</body>
+<script src="test.js"></script>
+<script src="http://rogerperez.us/quotes.json"></script>
