@@ -30,23 +30,24 @@
 //     ]
 //https://learnwebcode.github.io/json-example/animals-1.json
 //http://rogerperez.us/quotes.json
-function createCORSRequest(method,URL){
-  var xhr = new XMLHttpRequest();
-  if ('withCredentials' in xhr){
-    // Check if the XMLHttpRequest object has a "withCredentials" property.
-    // "withCredentials" only exists on XMLHTTPRequest2 objects.
-    xhr.open(method, URL, true);
-  }
-}
+// function createCORSRequest(method,URL){
+//   var xhr = new XMLHttpRequest();
+//   if ('withCredentials' in xhr){
+//     // Check if the XMLHttpRequest object has a "withCredentials" property.
+//     // "withCredentials" only exists on XMLHTTPRequest2 objects.
+//     xhr.open(method, URL, true);
+//   }
+// }
 //http://rogerperez.us/quotes.json
 //https://learnwebcode.github.io/json-example/animals-' + pageCount + '.json'
 
 
 var pageCount = 1;
+var i=0;
 var quotePara = document.getElementById("quotePara");
 var getQuote = document.getElementById("getQuote");
 
-
+// Request to get json data where the quotes are located
 getQuote.addEventListener("click", function() {
   var ourRequest= new XMLHttpRequest();
   ourRequest.open('GET','http://rogerperez.us/quotes.json');
@@ -57,18 +58,28 @@ getQuote.addEventListener("click", function() {
 
   ourRequest.send();
   pageCount++;
-  if (pageCount>3){
-    getQuote.class.add('hide-me');
+
+  if (pageCount>6){
+    getQuote.classList.add('hide-me');
   }
 });
 
-
+console.log(i);
 
 function renderHTML(data){
   var htmlString="";
-  for (i=0;i<data.length; i++){
-    htmlString="<p>"+data[i].name+"</p>"
-  }
+  var htmlAuthor="";
 
+  // for (j=0;j<data.length;j++){
+  //   remove
+  // }
+  for (i=0;i<data.length; i++){
+    console.log("first",i);
+    htmlString=data[i].quote;
+    htmlAuthor=data[i].author;
+    console.log(i);
+  }
   quotePara.insertAdjacentHTML('beforeend', htmlString);
+  author.insertAdjacentHTML('beforeend', htmlAuthor);
+  
 }
