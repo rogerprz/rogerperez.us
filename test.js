@@ -50,10 +50,14 @@ var getQuote = document.getElementById("getQuote");
 // Request to get json data where the quotes are located
 getQuote.addEventListener("click", function() {
   var ourRequest= new XMLHttpRequest();
-  ourRequest.open('GET','http://rogerperez.us/quotes.json');
+  ourRequest.open('GET','http://rogerperez.us/quotes-' + pageCount + '.json');
   ourRequest.onload= function() {
+    if (ourRequest.status>= 200 && ourRequest.status<400){
     var ourData= JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
+  } else{
+    console.log("Connection Error, Please try again.")
+  }
   };
 
   ourRequest.send();
@@ -81,5 +85,5 @@ function renderHTML(data){
   }
   quotePara.insertAdjacentHTML('beforeend', htmlString);
   author.insertAdjacentHTML('beforeend', htmlAuthor);
-  
+
 }
