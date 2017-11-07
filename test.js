@@ -40,7 +40,7 @@ function renderHTML(data){
   author.textContent = data[pageCount].author;
   pageCount++;
 
-  if (pageCount>data.length){
+  if (pageCount>data.length-1){
     getQuote.classList.add('hide-me');
   }
 
