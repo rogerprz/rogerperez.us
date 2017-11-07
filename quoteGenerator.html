@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Roger Perez | Portfolio</title>
+  <title>Roger Perez | Portfolio </title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--Link to add icon on top of tab-->
@@ -17,57 +17,44 @@
       <!--custom stylesheets for portfolio-->
       <link rel="stylesheet" type="text/css" href="css/quoteStyles.css">
       <!--Javascript for quote generator-->
-      <script src="quoteGen.js"></script>
 </head>
-
 <body>
-
 <div id="header" >
   <header class=""></header>
 </div>
 
 <section class="">
   <div class="container">
-  <div class="row">
+    <div class="row">
 
 
-  <div class="quote-box  col-md-3 col-md-offset-3">
-    <div class="quote-text">
-      <i class="fa fa-quote-left"> </i><span id="text"></span>
-        <p id="textpara">
-        Quote generated here.
-        <script>
-          var text = '{"employees":[' +
-          '{"firstName":"John","lastName":"Doe" },' +
-          '{"firstName":"Anna","lastName":"Smith" },' +
-          '{"firstName":"Peter","lastName":"Jones" }]}';
+      <div id="quoteBox" class="quote-box col-md-3 col-md-offset-3">
+        <div id="text" class="quote-text">
+          <i class="fa fa-quote-left"> </i><span id="text"></span>
 
-          obj = JSON.parse(text);
-          document.getElementById("textpara").innerHTML =
-          obj.employees[1].firstName + " " + obj.employees[1].lastName;
+            <p id="quotePara">
+              Never give up on something that you can’t go a day without thinking about.
+            </p>
 
-
-
-          </script>
-
-        </p>
-        <i class="fa fa-quote-right float-right"> </i><span id="text2"></span>
-    </div>
-        <div class="quote-author">
-        - <span id="author">Temp Author</span>
+            <i class="fa fa-quote-right align-right"> </i>
         </div>
-          <div class="buttons">
-            <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-              <i class="fa fa-twitter fa-2x"></i>
-            </a>
-
-              <button id="getQuote"class="btn btn-primary">Generate Quote</button>
+            <div class="quote-author">
+              - <span id="author">Winston Churchill</span>
             </div>
-  </div>
-  </div>
+              <div class="button-link">
+                <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
+                  <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <button id="getQuote"class="btn btn-primary">Get Quote</button>
+                </div>
+        </div>
+      </div>
   </div>
 </section>
 <!--footer section begins  -->
 
 <footer></footer>
 </body>
+<!--Javascript for quote generator-->
+<script src="javascript/quoteGenerator.js"></script>
+<script src="http://rogerperez.us/JSON/quotes-1.json"></script>
