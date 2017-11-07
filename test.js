@@ -83,7 +83,8 @@ function renderHTML(data){
     htmlAuthor=data[i].author;
     console.log(i);
   }
-  quotePara.insertAdjacentHTML('beforeend', htmlString);
-  author.insertAdjacentHTML('beforeend', htmlAuthor);
+  quotePara.textContent = data[pageCount].quote;
+  author.textContent = data[pageCount].author;
+
 
 }
