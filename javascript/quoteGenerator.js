@@ -8,7 +8,7 @@ var getQuote = document.getElementById("getQuote");
 // Request to get json data where the quotes are located
 getQuote.addEventListener("click", function() {
   var ourRequest= new XMLHttpRequest();
-  ourRequest.open('GET','http://rogerperez.us/quotes-1.json');
+  ourRequest.open('GET','http://rogerperez.us/JSON/quotes-1.json');
   ourRequest.onload= function() {
     if (ourRequest.status>= 200 && ourRequest.status<400){
     var ourData= JSON.parse(ourRequest.responseText);
