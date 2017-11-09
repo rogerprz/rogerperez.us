@@ -33,9 +33,10 @@ section{
   margin:150px 20% 15% 30% ;
   border-radius: 5px;
   background: red;
-  min-width:40%;
+  min-width:50%;
   width: 400px;
-  max-height:350px;
+  height:375px;
+  max-height:50%;
   z-index:2;
 
 }
@@ -43,7 +44,7 @@ section{
   background: orange;
   font-size: 30px;
   font-family:'Courgette', cursive;
-  
+
 
 }
 .quote-author{

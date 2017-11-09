@@ -36,12 +36,14 @@ function renderHTML(data){
     htmlAuthor=data[i].author;
 
   }
+  
   quotePara.textContent = data[pageCount].quote;
   author.textContent = data[pageCount].author;
   pageCount++;
 
   if (pageCount>data.length-1){
-    getQuote.classList.add('hide-me');
+    pageCount=0; //This whill reset the page count so the quote generator can continue going.
+    // getQuote.classList.add('hide-me');
   }
 
 }
