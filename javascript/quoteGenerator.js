@@ -31,10 +31,10 @@ function renderHTML(data){
   //   remove
   // }
   for (i=0;i<data.length; i++){
-    console.log("first",i);
+
     htmlString=data[i].quote;
     htmlAuthor=data[i].author;
-    console.log(i);
+
   }
   quotePara.textContent = data[pageCount].quote;
   author.textContent = data[pageCount].author;
