@@ -11,8 +11,6 @@
     "author":"Nelson Mandela"},
   {"quote":"If you really look closely, most overnight successes took a long time.",
     "author":"Steve Jobs"},
-  {"quote":"The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.",
-    "author":"Barack Obama"},
   {"quote":"The successful warrior is the average man, with laser-like focus.",
     "author":"Bruce Lee"},
   {"quote":"If you really want to do something, you'll find a way. If you don't, you'll find an excuse.",
@@ -28,5 +26,7 @@
   {"quote":"When you play, play hard; when you work, don't play at all.",
     "author":"Theodore Roosevelt"},
   {"quote":"Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all.",
-    "author":"Dale Carnegie"}
+    "author":"Dale Carnegie"},
+  {"quote":"The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.",
+    "author":"Barack Obama"}
     ]
