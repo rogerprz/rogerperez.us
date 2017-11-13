@@ -36,7 +36,7 @@ function renderHTML(data){
     htmlAuthor=data[i].author;
 
   }
-  
+
   quotePara.textContent = data[pageCount].quote;
   author.textContent = data[pageCount].author;
   pageCount++;
@@ -45,5 +45,18 @@ function renderHTML(data){
     pageCount=0; //This whill reset the page count so the quote generator can continue going.
     // getQuote.classList.add('hide-me');
   }
+  //tweetButton.js
+
+  var getPostQuote=document.getElementById("quotePara").innerHTML, linkElement= document.getElementById("tweet-quote");
+  var getAuthor=document.getElementById("author").innerHTML
+    $(linkElement).click(function(event){
+      event.preventDefault();
+
+      var tweetedLink=window.location.href;
+      // Changes window detail. update url with information you will want to add to tweet. 
+      window.open("http://twitter.com/intent/tweet?hashtags=quotes&" + tweetedLink +
+      "&text=" +'"'+ getPostQuote + '"' + "---"+ getAuthor +
+      "&via=iRogersb&", "twitterwindow", "height=450, width=550, toolbar=0, location=0, menubar=0, directories=0, scrollbars=0");
+    });
 
 }
