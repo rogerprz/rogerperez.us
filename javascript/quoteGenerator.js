@@ -53,7 +53,6 @@ function renderHTML(data){
       event.preventDefault();
 
       var tweetedLink=window.location.href;
-      // Changes window detail. update url with information you will want to add to tweet. 
       window.open("http://twitter.com/intent/tweet?hashtags=quotes&" + tweetedLink +
       "&text=" +'"'+ getPostQuote + '"' + "---"+ getAuthor +
       "&via=iRogersb&", "twitterwindow", "height=450, width=550, toolbar=0, location=0, menubar=0, directories=0, scrollbars=0");
