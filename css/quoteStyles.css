@@ -30,16 +30,19 @@ section{
 .quote-box{
   /*text-align:center;*/
   /*position: relative;*/
-  margin:150px 20% 15% 30% ;
+  margin:15% 20% 15% 30% ;
   border-radius: 5px;
   background: red;
   min-width:50%;
   width: 400px;
   height:375px;
   max-height:50%;
+  z-index:3;
+}
+.enclosedBox{
+  color:black;
   z-index:2;
 }
-
 .quote-text{
   background: orange;
   font-size: 28px;
@@ -58,26 +61,42 @@ section{
   font-family:'Courgette', cursive;
 }
 #tweet-quote{
-  background: yellow;
+  background:#0084b4 ; /*twitter color*/
   display: inline-block;
   border: 2px black solid;
-  padding: 10px;
-  margin:25% 35% 5% 5%;
+  padding: 15px;
+  cursor: pointer;
+  margin:10% 35% 5% 5%;
   bottom: 0;
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*right: 0;*/
+  position: absolute;
+  border-radius: 50%;
+}
+a.tweet-quote {
+  color:#fff;
+  text-decoration:none
+}
+
+a.tweet-quote:visited {
+  color:#fff
+}
+
+a.:active,
+a.tweet-quote:hover {
+  color:#fff;
+  background-color:#55acee
 }
 #button{
   background: blue;
   display: inline-block;
   padding: 20px;
-
+  display: inline-block;
 }
 #getQuote{
-  margin:2% 1% 5% 20%;
-
+  margin:2% 3% 5% 20%;
+  position: absolute;
   border: 2px black solid;
+  bottom: 0;
+  right:0;
 }
 
 
