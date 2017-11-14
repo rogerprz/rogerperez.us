@@ -14,7 +14,7 @@ p{
   background: pink;
 }
 #header{
-  background-color: brown;
+  background-color: black;
   position: fixed;
     top: 0px;
     left: 0px;
@@ -44,16 +44,16 @@ section{
   z-index:2;
 }
 .quote-text{
-  background: orange;
-  font-size: 28px;
+  background: #6095B5;
+  font-size: 26px;
+  min-height: 250px;
   margin: auto 5px;
-  font-family:'Courgette', cursive;
+  font-family:Arial, Verdana;
 }
 .quotePara{
   margin: auto 10px;
+
 }
-
-
 .quote-author{
   background: green;
   text-align: right;
@@ -64,7 +64,7 @@ section{
   background:#0084b4 ; /*twitter color*/
   display: inline-block;
   border: 2px black solid;
-  padding: 15px;
+  padding: 12px;
   cursor: pointer;
   margin:10% 35% 5% 5%;
   bottom: 0;

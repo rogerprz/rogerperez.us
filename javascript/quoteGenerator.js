@@ -4,6 +4,9 @@ var pageCount =0;
 var i=0;
 var quotePara = document.getElementById("quotePara");
 var getQuote = document.getElementById("getQuote");
+var colors=['#0e8eb6','#125075','#6095B5','#053C5D'];
+var getColors=document.getElementById("quoteBox");
+var getBackground=document.getElementById("quoteBox");
 
 // Request to get json data where the quotes are located
 getQuote.addEventListener("click", function() {
@@ -31,7 +34,7 @@ function renderHTML(data){
   //   remove
   // }
   for (i=0;i<data.length; i++){
-
+    newBox=document.getElementById("quoteBox").style.color
     htmlString=data[i].quote;
     htmlAuthor=data[i].author;
 
