@@ -2,13 +2,13 @@
 
 var pageCount =0;
 var colorCount = 0;
-var colorCountBack=0;
+var colorCountBack=3;
 var i=0;
 
 var quotePara = document.getElementById("quotePara");
 var getQuote = document.getElementById("getQuote");
 var colors=['#708090','#0e8eb6','#125075','#6095B5','#053C5D',"#07889B",'#FFF0F5','#708090','#0e8eb6'];
-var colorsBack=['white','#6095B5','#FDF5E6','#053C5D','#0e8eb6','#125075','#FFFAFA','#FFEBCD'];
+// var colorsBack=['white','#6095B5','#FDF5E6','#053C5D','#0e8eb6','#125075','#FFFAFA','#FFEBCD'];
 var getColors=document.getElementById("quoteBox");
 var getBackground=document.getElementById("header");
 
@@ -29,14 +29,10 @@ getQuote.addEventListener("click", function() {
 
 });
 
-
 function renderHTML(data){
   var htmlString="";
   var htmlAuthor="";
 
-  // for (j=0;j<data.length;j++){
-  //   remove
-  // }
   for (i=0;i<data.length; i++){
     htmlString=data[i].quote;
     htmlAuthor=data[i].author;
@@ -46,7 +42,7 @@ function renderHTML(data){
   quotePara.textContent = data[pageCount].quote;
   author.textContent = data[pageCount].author;
   getColors.style.background=colors[colorCount];
-  getBackground.style.background=colorsBack[colorCountBack];
+  getBackground.style.background=colors[colorCountBack];
   pageCount++;
   colorCount++;
   colorCountBack++;
@@ -59,7 +55,7 @@ function renderHTML(data){
     colorCount=0; //This whill reset the page count so the quote generator can continue going.
     // getQuote.classList.add('hide-me');
   }
-  if (colorCountBack>=colorsBack.length){
+  if (colorCountBack>=colors.length){
     colorCountBack=0; //This whill reset the page count so the quote generator can continue going.
     // getQuote.classList.add('hide-me');
   }

@@ -30,9 +30,10 @@ section{
 .quote-box{
   text-align:justify;
   /*position: relative;*/
-  margin:15% 20% 15% 30% ;
+  margin:15% 20% 15% 26% ;
   border-radius: 5px;
   background: red;
+  color: black;
   min-width:50%;
   width: 400px;
   height:375px;
@@ -47,7 +48,7 @@ section{
   /*background: brown;*/
   font-size: 26px;
   min-height: 210px;
-  margin: 15px 10px;
+  margin: 20px 10px;
   font-family:Arial, Verdana;
 }
 .quotePara{
