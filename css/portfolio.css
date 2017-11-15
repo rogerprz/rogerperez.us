@@ -44,7 +44,7 @@ h1{
   padding-top:20px;
 }
 /*right-side of about me section*/
-#myphoto{
+#myPhoto{
   max-width:450px;
   display: block;
   margin: auto;
@@ -208,4 +208,43 @@ footer{
   font: 2em;
   color: white;
   background:#2B2B2B;
+}
+
+/* Media Queries
+-------------------------*/
+/*@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+
+}*/
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  #myPhoto {
+    width: 400px;
+  }
+}
+@media (max-width: 400px){
+  header {
+    text-align: center;
+  }
+  #myPhoto {
+    width: 300px;
+  }
+}
+@media (max-width: 300px){
+  header {
+    text-align: center;
+  }
+  #myPhoto {
+    width: 200px;
+  }
 }
