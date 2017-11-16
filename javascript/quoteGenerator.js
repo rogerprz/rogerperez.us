@@ -7,10 +7,10 @@ var i=0;
 
 var quotePara = document.getElementById("quotePara");
 var getQuote = document.getElementById("getQuote");
-var colors=['#708090','#0e8eb6','#125075','#6095B5','#053C5D',"#07889B",'#FFF0F5','#708090','#0e8eb6'];
+var colors=['#708090','#0e8eb6','#FFEBCD','#125075','#6095B5','#053C5D',"#07889B",'#FFF0F5','#708090','#0e8eb6'];
 // var colorsBack=['white','#6095B5','#FDF5E6','#053C5D','#0e8eb6','#125075','#FFFAFA','#FFEBCD'];
 var getColors=document.getElementById("quoteBox");
-var getBackground=document.getElementById("header");
+var getBackground=document.getElementById("body");
 
 // Request to get json data where the quotes are located
 getQuote.addEventListener("click", function() {
