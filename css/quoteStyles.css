@@ -41,7 +41,9 @@ section{
   max-height:50%;
   /*z-index:3;*/
 }
-
+/*.enclosedBox{
+  margin: 10px;
+}*/
 .quote-text{
   /*background: brown;*/
   font-size: 26px;
