@@ -98,6 +98,10 @@ footer {
   display: inline-block;
 }
 
+div > a:hover{
+    color: #EDF2F4;
+}
+
 
 /* Navigation
 -------------------------*/

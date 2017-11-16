@@ -1,7 +1,7 @@
 
 html {
-  box-sizing: border-box;
-    background:grey;
+  /*box-sizing: border-box;*/
+    background-color:#071924;/*Darker blue */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -13,14 +13,14 @@ h1{
 p{
   /*background: pink;*/
 }
-#header{
-  background-color: #071924;/*Darker blue */
-  position: fixed;
-    top: 0px;
-    left: 0px;
+body{
+  background-color:#071924;/*Darker blue */
+  /*position: fixed;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
     width: 100%;
     height: 100%;
-    z-index: 1;
+    /*z-index: 1;*/
 
 }
 section{
@@ -38,12 +38,9 @@ section{
   width: 400px;
   height:375px;
   max-height:50%;
-  z-index:3;
+  /*z-index:3;*/
 }
-.enclosedBox{
-  color:black;
-  z-index:2;
-}
+
 .quote-text{
   /*background: brown;*/
   font-size: 26px;
@@ -108,6 +105,7 @@ a.tweet-quote:hover {
 footer{
   background: lightblue;
   height:auto;
+  text-align: center;
 
 }
 
