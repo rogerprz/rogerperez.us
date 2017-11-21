@@ -1,6 +1,6 @@
 var api= "https://fcc-weather-api.glitch.me";
 var x= document.getElementById("geoLocal");
-var tempX= document.getElementByID("temp");
+var tempX= document.getElementById("temp");
 
 var ourRequest= new XMLHttpRequest();
 ourRequest.open('GET','http://rogerperez.us/JSON/weather.json');
@@ -20,7 +20,7 @@ function renderHTML(data){
   // var htmlAuthor="";
 
   for (i=0;i<data.length; i++){
-    temp=data[i].main.temp;
+    temp=data[i].weather;
     // htmlAuthor=data[i].author;
   }
   tempX.textContent=data[0].main.temp;

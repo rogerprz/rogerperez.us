@@ -1,5 +1,5 @@
 {
-"coord":{ "lon":159, "lat":35 },
+"coord": { "lon":159, "lat":35 },
 "weather":[ {
   "id":500,
   "main":"Rain",
@@ -21,7 +21,7 @@
     "dt":1499521932,
     "sys":{
       "message":0.0034,
-      "sunrise":1499451436, 
+      "sunrise":1499451436,
       "sunset":1499503246 },
       "id":0,
       "name":"",
