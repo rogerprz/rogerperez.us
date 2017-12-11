@@ -64,3 +64,13 @@
   transform-origin: 300px 300px;
   transition: transform .5s ease-in-out;
 }
+
+#digitalDislay{
+  font-size: 2em;
+  text-align:center ;
+}
+.wordTime{
+  font-size: 2em;
+  text-align:center ;
+  text-transform: uppercase
+}
