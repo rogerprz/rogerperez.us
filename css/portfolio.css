@@ -66,12 +66,15 @@ h1{
 .singleprojects{
   margin:auto;
   left:4%;
+  /*max-width: 350px;*/
+  min-height: 500px;
   text-align: center;
   font:center;
 }
 #projecttitle{
   text-align: center;
   font-weight:bold;
+  height:auto;
   text-transform: uppercase;
   padding:10px 0px 80px 0px;
 }
@@ -87,6 +90,7 @@ h1{
 .project-image-container{
   border: 5px solid #3B3738;
   background-color: #A93226;
+  height: 200px;
 }
 .middle {
   transition: .5s ease;
@@ -101,7 +105,7 @@ h1{
   opacity: 1;
   /*display: block;*/
   width: 100%;
-  height: 190px;
+  height: 185px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -133,6 +137,7 @@ h1{
 .viewproject {
   background-color: white;
   color: white;
+  text-align: center;
   font-size: 16px;
   padding: 16px 32px;
 }
@@ -148,6 +153,7 @@ h1{
   font-family: Sans-serif;
   font-size: 15px;
   padding:10px;
+  height:125px;
 }
 .project-languages{
   padding:5px 0px 15px 0px;
