@@ -5,16 +5,23 @@
       <!-- <link rel="stylesheet" type="text/css" href="css/quoteStyles.css"> -->
 </head>
 <body>
-  <button onclick="getWeather()"> Temp</button>
+  <!-- <button onclick="getWeather()"> Temp</button> -->
   <p id="temp">Time</p>
-
-  <button onclick="getLocation()">Try It</button>
-
   <p id='geo'>Geolocation</p>
-  <p id='geoAPI'>Geo API</p>
 
-  <script>
-
+  <script type="text/javascript">
+    var geoLocal=document.getElementById("geo");
+    function getLocation(){
+      if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else{
+        geoLocal.innerHTML="Geolocation is not supported by this browser.";
+      }
+    }
+    function showPosition(position){
+      geoLocal.innerHTML="Latitude:" + position.coords.latitude +
+      "<br> Longitude: " + position.coords.longitude;
+    }
   </script>
 </body>
 <script src="javascript/weatherTest.js"></script>

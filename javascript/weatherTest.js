@@ -1,10 +1,10 @@
 var api= "https://fcc-weather-api.glitch.me/api/current?";
 var apiXU= "http://api.apixu.com/v1/current.json?key=ed958f2779e542a3b5c73039171312&q=";
 var ipApi= "http://ip-api.com/json";
-var lat, lon;
 var x= document.getElementById("geoLocal");
 var tempX= document.getElementById("temp");
 
+<<<<<<< HEAD
 // Following functions will get the latitude and longitude
 var geoLocal=document.getElementById("geo");
 function getLocation(){
@@ -24,11 +24,16 @@ function getLocation(){
 var finalApi=apiXU + lat+","+lon;
 
 
+=======
+>>>>>>> parent of 7728720... many changes
 
 
-// JSON request for API to get temperature
 var ourRequest= new XMLHttpRequest();
+<<<<<<< HEAD
 ourRequest.open('GET',finalApi);
+=======
+ourRequest.open('GET',ipApi);
+>>>>>>> parent of 7728720... many changes
 ourRequest.onload= function() {
   if (ourRequest.status>= 200 && ourRequest.status<400){
     var ourData= JSON.parse(ourRequest.responseText);
@@ -43,6 +48,7 @@ ourRequest.onload= function() {
     console.log(ourRequest)
 
 
+<<<<<<< HEAD
     var geoLocation= document.getElementById("geoAPI");
     geoLocation.innerHTML=finalApi;
 
@@ -51,3 +57,11 @@ function showPosition(position){
       "<br> Longitude: " + position.coords.longitude;
 
     }
+=======
+  }
+  // htmlString.textContent=data[0];
+  tempX.textContent= data;
+  // return data;
+}
+console.log(ourRequest)
+>>>>>>> parent of 7728720... many changes
