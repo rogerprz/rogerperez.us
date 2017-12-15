@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      <!-- <link rel="stylesheet" type="text/css" href="css/quoteStyles.css"> -->
+</head>
+<body>
+  <div id="weather"></div>
+  <p><span id="temp"></span></p>
+  <p><span id="wind"></spain></p>
+
+<script>
+    var wUndergroundSF= 'http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/San_Francisco.json'
+    var wUndergroundGeo= 'http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4278,-119.7034111.json';
+    var weather= new XMLHttpRequest();
+    weather.open("GET",wUndergroundGeo, false);
+    weather.send(null);
+
+    var myRequest= JSON.parse(weather.response);
+    var cityLocal= "City location: "+ location.city + "<br/>";
+    // var cTemp= "Current location: " + myRequest.location.current.temp_f + "<br/>";
+
+    // var city="City: "+ myRequest.location.name +"<br>";
+    // var state= "State: "+ myRequest.location.region + "<br>";
+    document.getElementById("weather").innerHTML= cityLocal
+</script>
+
+
+</body>
+<script src="javascript/weatherTest1.js"></script>
+<!-- <script src="JSON/weather.json"></script> -->
