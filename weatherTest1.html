@@ -3,29 +3,78 @@
 <head>
 
       <!-- <link rel="stylesheet" type="text/css" href="css/quoteStyles.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">>
+
+      </script>
 </head>
 <body>
-  <div id="weather"></div>
-  <p><span id="temp"></span></p>
-  <p><span id="wind"></spain></p>
+    <div id="weather"></div>
+    <p><span id="temp"></span></p>
+    <p><span id="wind"></spain></p>
+
+      <p>Click the button to get your coordinates.</p>
+
+      <button onclick="getLocation()">Try It</button>
+      <p id="geoLocal"></p>
 
 <script>
-    var wUndergroundSF= 'http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/San_Francisco.json'
-    var wUndergroundGeo= 'http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4278,-119.7034111.json';
-    var weather= new XMLHttpRequest();
-    weather.open("GET",wUndergroundGeo, false);
-    weather.send(null);
+var lon, lan;
+var geoLocal = document.getElementById("geoLocal");
 
-    var myRequest= JSON.parse(weather.response);
-    var cityLocal= "City location: "+ location.city + "<br/>";
-    // var cTemp= "Current location: " + myRequest.location.current.temp_f + "<br/>";
+function getLocation() {
 
-    // var city="City: "+ myRequest.location.name +"<br>";
-    // var state= "State: "+ myRequest.location.region + "<br>";
-    document.getElementById("weather").innerHTML= cityLocal
+  };
+
+$(document).ready(function(){
+
+if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+      geoLocal.innerHTML = "Geolocation is not supported by this browser.";
+    }
+function showPosition(position) {
+    var beforeURL= 'http://api.wunderground.com/api/8a8af55ae16c8627/';
+    var conditionsURL="conditions/q/";
+    var geoLookUp="geolookup/q/"
+    var endURL=".json";
+    geoLocal.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+    lan= position.coords.latitude;
+    lon= position.coords.longitude;
+    wUndergroundGeo=beforeURL + geoLookUp+ lan + "," + lon + endURL;
+    console.log(lan, lon);
+    // return (position);
+
+console.log("outside", lan, lon);
+console.log("Final URL:", wUndergroundGeo);
+
+var wUndergroundSF= 'http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/San_Francisco.json'
+// var wUndergroundGeo= 'http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4278,-119.7034111.json';
+var weather= new XMLHttpRequest();
+weather.open("GET",wUndergroundGeo, false);
+weather.send(null);
+
+var myRequest= JSON.parse(weather.response);
+var cityLocal= "City location: "+ myRequest.location.city + "<br/>";
+document.getElementById("weather").innerHTML= cityLocal
+var stateURL= myRequest.location.state + "/";
+
+var cityURL=myRequest.location.city ;
+var cityURL=cityURL.replace(/ /gi,"_");//Replaces spaces of city with "_" so url will be valid.
+
+
+var weatherURL= beforeURL + conditionsURL +stateURL + cityURL + endURL;
+console.log("Weather", weatherURL)
+
+
+};
+
+
+  });
+
 </script>
 
 
 </body>
-<script src="javascript/weatherTest1.js"></script>
+<!-- <script src="javascript/weatherTest1.js"></script> -->
 <!-- <script src="JSON/weather.json"></script> -->
