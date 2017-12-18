@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- <link rel="stylesheet" type="text/css" href="css/quoteStyles.css"> -->
 </head>
 <body>
-  <button onclick="getWeather()"> Temp</button>
-  <p id="temp">Time</p>
-  <p id='geo'>Geolocation</p>
+<div id="weather"></div>
+<p><span id="temp"></span></p>
+<p><span id="wind"></spain></p>
 
-  <!-- <script type="text/javascript">
-    var geoLocal=document.getElementById("geo");
-    function getLocation(){
-      if (navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else{
-        geoLocal.innerHTML="Geolocation is not supported by this browser.";
-      }
-    }
-    function showPosition(position){
-      geoLocal.innerHTML="Latitude:" + position.coords.latitude +
-      "<br> Longitude: " + position.coords.longitude;
-    }
-  </script> -->
+  <!-- <p>Click the button to get your coordinates.</p>
+  <button onclick="getLocation()">Try It</button> -->
+
+  <p id="geoLocal"></p>
+  <p id="fTemp"></p>
 </body>
 <script src="javascript/weatherApp.js"></script>
 <!-- <script src="JSON/weather.json"></script> -->

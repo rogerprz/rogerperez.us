@@ -1,57 +1,61 @@
-var api= "https://fcc-weather-api.glitch.me/api/current?";
-var apiXU= "http://api.apixu.com/v1/current.json?key=ed958f2779e542a3b5c73039171312&q=";
-var ipApi= "http://ip-api.com/json";
-var x= document.getElementById("geoLocal");
-var tempX= document.getElementById("temp");
+var lon, lan;
+var example='http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4277882,-119.7034209.json'; //Examples of completed coordinates
+var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/Santa_Barbara.json"; //example City.
+var geoLocal = document.getElementById("geoLocal");
+var temp= document.getElementById("temp");
+$(document).ready(function(){
 
-// Following functions will get the latitude and longitude
-var geoLocal=document.getElementById("geo");
-function getLocation(){
-  if (navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(
-      function getWeather(position){
-        var lat=position.coords.latitude;
-        var lon=position.coords.longitude;
-      getWeather(lat,lon);
-    });
-    navigator.geolocation.getCurrentPosition(showPosition);
-    } else{
-    geoLocal.innerHTML="Geolocation is not supported by this browser.";
-          }
-  }
-
-var finalApi=apiXU + lat+","+lon;
-
-
-
-var ourRequest= new XMLHttpRequest();
-ourRequest.open('GET',finalApi);
-ourRequest.onload= function() {
-  if (ourRequest.status>= 200 && ourRequest.status<400){
-    var ourData= JSON.parse(ourRequest.responseText);
-    renderHTML(ourData);
-    console.log("ourData",ourData);
-  } else{
-    console.log("Connection Error, Please try again.")
-  }
-  };
-
-    ourRequest.send();
-    console.log(ourRequest)
-
-
-    var geoLocation= document.getElementById("geoAPI");
-    geoLocation.innerHTML=finalApi;
-
-function showPosition(position){
-    geoLocal.innerHTML="Latitude:" + position.coords.latitude +
-      "<br> Longitude: " + position.coords.longitude;
-
+if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+      geoLocal.innerHTML = "Geolocation is not supported by this browser.";
     }
+function showPosition(position) {
+    var beforeURL= 'http://api.wunderground.com/api/8a8af55ae16c8627/';
+    var conditionsURL="conditions/q/";
+    var geoLookUp="geolookup/q/"
+    var endURL=".json";
+    geoLocal.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+    lan= position.coords.latitude;
+    lon= position.coords.longitude;
+    wUndergroundGeo=beforeURL + geoLookUp+ lan + "," + lon + endURL;
+    // return (position);
 
-  }
-  // htmlString.textContent=data[0];
-  tempX.textContent= data;
-  // return data;
+
+
+var wUndergroundSF= 'http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/San_Francisco.json'
+// var wUndergroundGeo= 'http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4278,-119.7034111.json';
+var weather= new XMLHttpRequest();
+weather.open("GET",wUndergroundGeo, false);
+weather.send(null);
+
+var myRequest= JSON.parse(weather.response);
+var cityLocal= "City location: "+ myRequest.location.city + "<br/>";
+document.getElementById("weather").innerHTML= cityLocal
+var stateURL= myRequest.location.state + "/";
+
+var cityURL=myRequest.location.city ;
+var cityURL=cityURL.replace(/ /gi,"_");//Replaces spaces of city with "_" so url will be valid.
+
+
+var weatherURL= beforeURL + conditionsURL +stateURL + cityURL + endURL;
+console.log("Weather", weatherURL)
+
+var weather2= new XMLHttpRequest();
+weather2.open("GET", weatherURL, false);
+weather2.send(null);
+
+var secRequest=JSON.parse(weather2.response);
+var fTemp= "Fahrenheit: " + secRequest.current_observation.temp_f;
+console.log(fTemp);
+temp.innerHTML=fTemp;
+return fTemp;
+};
+
+function converToCelcius(fTemp){
+  var cTemp= fTemp-32;
+  console.log(cTemp);
 }
-console.log(ourRequest)
+
+  });
