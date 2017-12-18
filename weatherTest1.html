@@ -7,12 +7,12 @@
       </script>
 </head>
 <body>
-    <div id="weather">Test</div>
+    <div id="weather">City location:</div>
     <p><span id="temp"></span></p>
     <p><span id="wind"></spain></p>
-
+    <p id="fTemp">Coordinates Below: </p>
     <p id="geoLocal"></p>
-    <p id="fTemp"></p>
+
 
 <script>
 var lon, lan;
@@ -70,10 +70,6 @@ temp.innerHTML=fTemp;
 return fTemp;
 };
 
-function converToCelcius(fTemp){
-  var cTemp= fTemp-32;
-  console.log(cTemp);
-}
 
   });
 </script>
