@@ -3,6 +3,7 @@ var example='http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.427
 var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/Santa_Barbara.json"; //example City.
 var geoLocal = document.getElementById("geoLocal");
 var temp= document.getElementById("temp");
+var temp_c= document.getElementById("temp_c");
 $(document).ready(function(){
 
 if (navigator.geolocation) {
@@ -47,15 +48,23 @@ weather2.open("GET", weatherURL, false);
 weather2.send(null);
 
 var secRequest=JSON.parse(weather2.response);
-var fTemp= "Fahrenheit: " + secRequest.current_observation.temp_f;
-console.log(fTemp);
-temp.innerHTML=fTemp;
-return fTemp;
+var tempWeather= secRequest.current_observation.temp_f +" °"+"F";
+var cTemp= "Celcius: " + secRequest.current_observation.temp_c;
+console.log(temp);
+var outputTemp= "Fahrenheit: " + tempWeather;
+temp.innerHTML=outputTemp;
+temp_c.innerHTML=cTemp;
+// return fTemp;
+
+$(".temperature").click(function() {
+  var tempText=$(".temperature-text").html();
+  var unit= tempWeather.slice(-1);
+  var num = tempWeather.slice(0,temp.length - 3)/1;
+
+  console.log("tempText",tempText,"unit: ", unit,"num: ", num)
+});
+
 };
 
-function converToCelcius(fTemp){
-  var cTemp= fTemp-32;
-  console.log(cTemp);
-}
 
   });
