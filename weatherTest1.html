@@ -12,8 +12,8 @@
     <p><span id="wind"></spain></p>
     <p id="temp_c">Celcius Below: </p>
     <p id="geoLocal"></p>
-    <button id="temperature" onclick="getLocation()">Toggle Test:
-      <divclass="temperature-text">
+    <button id="temperature">Toggle Test:
+      <div class="temperature-text">
 
       </button>
     </div>
@@ -26,13 +26,18 @@ var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/C
 var geoLocal = document.getElementById("geoLocal");
 var temp= document.getElementById("temp");
 var temp_c= document.getElementById("temp_c");
+
+
 $(document).ready(function(){
 
+// function getLocation(){
+// }
 if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
+      navigator.geolocation.watchPosition(showPosition);
 } else {
       geoLocal.innerHTML = "Geolocation is not supported by this browser.";
     }
+
 function showPosition(position) {
     var beforeURL= 'http://api.wunderground.com/api/8a8af55ae16c8627/';
     var conditionsURL="conditions/q/";
