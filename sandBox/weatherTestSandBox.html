@@ -13,6 +13,7 @@
     <button onclick="getLocation()">Try It</button>
 
     <p id="demo"></p>
+    <p id="demo2"></p>
 
     </div>
 
@@ -27,6 +28,7 @@ var geoLocal = document.getElementById("geoLocal");
 var temp= document.getElementById("temp");
 var temp_c= document.getElementById("temp_c");
 var x = document.getElementById("demo");
+var x2 = document.getElementById("demo2");
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -37,25 +39,24 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+    x.innerHTML = "Latitude: " + position.coords.latitude;
+    x2.innerHTML= "Longitude: " + position.coords.longitude;
+    lan=position.coords.latitude;
+    lon=position.coords.longitude;
+    var both=[lan,lon];
+    return both;
+
 }
+lan=both[0];
+lon=both[1];
+console.log("lan: ",lan,"lon: ",lon);
 
 var weather= new XMLHttpRequest();
-weather.open("GET",wUndergroundGeo, false);
+weather.open("GET",freeCodeApi, false);
 weather.send(null);
 
 var myRequest= JSON.parse(weather.response);
-var cityLocal= "City location: "+ myRequest.location.city + "<br/>";
-document.getElementById("weather").innerHTML= cityLocal
-var stateURL= myRequest.location.state + "/";
 
-var cityURL=myRequest.location.city ;
-var cityURL=cityURL.replace(/ /gi,"_");//Replaces spaces of city with "_" so url will be valid.
-
-
-var weatherURL= beforeURL + conditionsURL +stateURL + cityURL + endURL;
-console.log("Weather", weatherURL)
 
 var weather2= new XMLHttpRequest();
 weather2.open("GET", weatherURL, false);
