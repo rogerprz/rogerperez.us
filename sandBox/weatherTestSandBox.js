@@ -1,6 +1,6 @@
-var api= "https://fcc-weather-api.glitch.me/api/current?";
 var apiXU= "http://api.apixu.com/v1/current.json?key=ed958f2779e542a3b5c73039171312&q=";
 var ipApi= "http://ip-api.com/json";
+var api= "https://fcc-weather-api.glitch.me/api/current?";
 var x= document.getElementById("geoLocal");
 var tempX= document.getElementById("temp");
 

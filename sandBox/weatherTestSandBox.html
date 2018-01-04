@@ -7,57 +7,40 @@
       </script>
 </head>
 <body>
-    <div id="weather">City location:</div>
-    <p><span id="temp"></span></p>
-    <p><span id="wind"></spain></p>
-    <p id="temp_c">Celcius Below: </p>
-    <p id="geoLocal"></p>
-    <button id="temperature">Toggle Test:
-      <div class="temperature-text">
 
-      </button>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
     </div>
 
 
 <script>
 var lon, lan;
-var example='http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4277882,-119.7034209.json'; //Examples of completed coordinates
-var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/Santa_Barbara.json"; //example City.
+// var example='http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4277882,-119.7034209.json'; //Examples of completed coordinates
+// var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/Santa_Barbara.json"; //example City.
+var freeCodeApi= "https://fcc-weather-api.glitch.me/api/current?";
+
 var geoLocal = document.getElementById("geoLocal");
 var temp= document.getElementById("temp");
 var temp_c= document.getElementById("temp_c");
+var x = document.getElementById("demo");
 
-
-$(document).ready(function(){
-
-// function getLocation(){
-// }
-if (navigator.geolocation) {
-      navigator.geolocation.watchPosition(showPosition);
-} else {
-      geoLocal.innerHTML = "Geolocation is not supported by this browser.";
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
+}
 
 function showPosition(position) {
-    var wUndergroundGeo= null;
-    var beforeURL= 'http://api.wunderground.com/api/8a8af55ae16c8627/';
-    var conditionsURL="conditions/q/";
-    var geoLookUp="geolookup/q/"
-    var endURL=".json";
-    geoLocal.innerHTML = "Latitude: " + position.coords.latitude +
+    x.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
-    lan= position.coords.latitude;
-    lon= position.coords.longitude;
-    wUndergroundGeo=beforeURL + geoLookUp+ lan + "," + lon + endURL;
-    // return (position);
-    coordLanLon=[lan,lon];
-    return coordLanLon;
-  };
-showPosition();
-console.log(coordLanLon);
+}
 
-var wUndergroundSF= 'http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/San_Francisco.json'
-// var wUndergroundGeo= 'http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4278,-119.7034111.json';
 var weather= new XMLHttpRequest();
 weather.open("GET",wUndergroundGeo, false);
 weather.send(null);
@@ -87,20 +70,9 @@ temp.innerHTML=outputTemp;
 temp_c.innerHTML=cTemp;
 // return fTemp;
 
-$(".temperature").click(function() {
-  var tempText=$(".temperature-text").html();
-  var unit= tempWeather.slice(-1);
-  var num = tempWeather.slice(0,temp.length - 3)/1;
-
-  console.log("tempText",tempText,"unit: ", unit,"num: ", num)
-});
-
-
-
-  });
 </script>
 
 
 </body>
-<script src="sandBox/weatherTestSandBox.js"></script>
+<!-- <script src="sandBox/weatherTestSandBox.js"></script> -->
 <!-- <script src="JSON/weather.json"></script> -->
