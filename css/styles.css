@@ -1,4 +1,6 @@
 /* Color Palette
+#0F326E - Darker blue navy maybe (new)
+
 #2B2D42 - dark blue
 #8D99AE - light blue
 #EDF2F4 - blue/white
@@ -63,7 +65,7 @@ a:hover {
 /* Header & Footer
 ------------------------------------*/
 header, footer {
-  background: #2B2D42;
+  background: #0F326E;
   color: #8D99AE;
 }
 /*header*/

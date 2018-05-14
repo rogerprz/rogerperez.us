@@ -1,51 +1,38 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
 }
-h1, h2 {
-  font-family: 'Caveat', cursive;
-  font-weight: 400;
+.name-animation {
+  display:inline-block;
+  padding:25px;
+  border-style: solid;
+  border-width: 5px;
+  color:black;
 }
-h1 {
-  font-size: 80px;
+
+h1{
   text-align:center;
-  /* text-transform:uppercase; */
+  text-transform:uppercase;
 
 }
-h2 {
-  font-size: 40px;
-  margin-top: 0;
-}
-h3 {
-  margin: 0;
-}
-a {
-  color: #EF233C;
-}
-a:hover {
-    text-decoration: none;
+#titlediv {
+  padding-top:85px;
+  height:260px;
+  color: #fff;
+  background-color: #C11A1A;
+  text-align:center;
+  border-width: 2px;
 }
 
-
-header{
-  background: #0F326E;
-  color: #8D99AE;
-  padding-top:50px;
-  position:relative;
+/*Beginning of ABOUT ME Section*/
+#about {
+  padding:50px;
+  height:100%;
+  margin: auto;
+  color: #fff;
+  background-color: #2B2B2B;
 }
-header h1, header h2 {
-    color: #EDF2F4;
-    margin: 0;
+.aboutmehead{
+  font-family: 'Caveat', cursive;
 }
-
-
-
 #pabout{
   text-align:justify;
   padding-top:10px;
@@ -70,12 +57,11 @@ header h1, header h2 {
   padding:50px;
   margin:auto;
   height:100%;
-  color: #EDF2F4;
-  background-color:#0F326E;
+  color: #2B2B2B;
+  background-color:#C11A1A;
 }
 #projectsection{
   margin:auto;
-  font-color:#EDF2F4 ;
 }
 .singleprojects{
   margin:auto;
@@ -86,7 +72,10 @@ header h1, header h2 {
   font:center;
 }
 #projecttitle{
+  text-align: center;
+  font-weight:bold;
   height:auto;
+  text-transform: uppercase;
   padding:10px 0px 80px 0px;
 }
 
@@ -100,21 +89,20 @@ header h1, header h2 {
 }
 .project-image-container{
   border: 5px solid #3B3738;
-  /* background-color: white; */
+  background-color: #A93226;
   height: 200px;
 }
-
 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 30%;
-  left:35%;
+  top: 50%;
+  left:50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
 .project-image{
-  opacity: .8;
+  opacity: 1;
   /*display: block;*/
   width: 100%;
   height: 100%;
@@ -123,29 +111,38 @@ header h1, header h2 {
 }
 .viewproject {
   background-color: white;
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
 
 .project-image:hover .image{
-  opacity: 0.8;
+  opacity: 0.3;
 }
 .work-project:hover .middle {
   opacity: 0.3;
 }
 
 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 33%;
+  left:40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 
 .viewproject {
   background-color: white;
-  font-color: black;
+  color: white;
   text-align: center;
   font-size: 16px;
   padding: 16px 32px;
 }
 .project-title{
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1.2px;
@@ -165,29 +162,12 @@ header h1, header h2 {
 }
 
 /*Contact Section begins*/
-/* .contact {
+.contact {
   padding:50px;
   height:100%;
   color: #fff;
   background-color:
     #2B2B2B;
-} */
-/* Footer styles only */
-footer {
-  text-align: center;
-  background: white;
-  /* position: fixed; */
-  bottom: 0;
-  width: 100%;
-}
-
-.contact-info a {
-  padding: 10px;
-  display: inline-block;
-}
-
-div > a:hover{
-    color: #EDF2F4;
 }
 
 #socialicons{
@@ -232,8 +212,29 @@ div > a:hover{
   letter-height: 1px;
 }
 
+/*footer section*/
 
+footer{
+  text-align: center;
+  font: 2em;
+  color: white;
+  background:#2B2B2B;
+}
 
+/* Media Queries
+-------------------------*/
+/*@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+
+}*/
 @media (max-width: 899px){
   header {
     text-align: center;
@@ -257,21 +258,4 @@ div > a:hover{
   #myPhoto {
     width: 200px;
   }
-}
-/* Navigation
--------------------------*/
-nav {
-  text-align: center;
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-nav a {
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
 }

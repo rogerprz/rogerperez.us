@@ -5,12 +5,13 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--custom stylesheets for portfolio-->
-      <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+      <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
       <!--Link to add icon on top of tab-->
-      <link rel="icon" href="https://goo.gl/W7woR2">
+      <link rel="icon" href="https://goo.gl/fHYx9q">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700" rel="stylesheet">
 
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,69 +27,27 @@
     ga('create', 'UA-103146066-1', 'auto');
     ga('send', 'pageview');
   </script>
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav navbar" style="display:inline-block">
-      <li><a id="resume" href="index.html">
-        <span>Home</span></a></li>
-      <li><a href="#about">
-        <span>About</span></a></li>
-      <li><a href="#portfolio">
-        <span>Portfolio</span></a></li>
-      <li>
-        <a href="#contact">
-          <span>Contact</span></a></li>
-        </ul>
-  </div>
-  </div>
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-</nav>
-<div id="titlediv" class="container-fluid" >
- <h1 id="title" ><a href="http://www.rogerperez.us/" class="iamroger" >
-<div class="name-animation">IAMROGER</div></a>
-   </h1></div>
- <!--Beginning of about me-->
-<section>
-<div id="about" class="container-fluid">
-  <div class="row">
-    <!--About me section-->
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <h1 class="aboutmehead"> About Me </h1>
-        <p id="pabout">Roger is a technology enthusiast with a background of a Technical Account Manager for SaaS property management software. Currently learning Front End Development from <a style="color:red"class="" target="_blank" href="https://www.freecodecamp.org/"><u>freeCodeCamp</u></a> which will provide a Certificate once completed. I am enthusiastic, life long learner, and a play hard work harder mentality. Currently I am seeking an entry level Web Developer or Quality Assurance Engineer appenticeship to continue obtaining knowledge through hands-on experience.</p>
-        <br>
+<body >
 
-        <h4 id="inprogressabout" class="aboutmehead">In Progress</h4>
-          <li> Front-End Web Development Certificate (freeCodeCamp).</li>
-          <li> Web Developer Certificate (Lynda.com).</li>
-          <li> Software QA Engineer Certificate (Lynda.com).</li>
-          <li> HTML & CSS-From Novice to Professional Certificate (Udemy.com).</li>
+  <header >
 
-        <h4 id="education" class="aboutmehead">Education | Certificates</h4>
-          <li>A.S in Computer Information Systems-Santa Barbara City College (May 2017)</li>
-          <li>B.A in Sociology-UC Santa Barbara (2013)</li>
-          <li>Access SQL Professional Certification-SBCC (Dec 2016)</li>
-          <li>6 of 13 Certificates Obtained for Front-End Web Development Certificate (Lynda.com)</li><br><br>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="coding_blog.html">Blog</a>
+    </nav>
 
-    </div>
-<!--Picture column with circle display -->
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <div class="img-responsive col-lg-5 col-md-6 col-sm-10 col-xs-10"> <img src="https://goo.gl/YsULrw" id="myPhoto" class="img-responsive img-circle" alt="Roger Perez standing at top of a rock during a Morro Bay hike."></div>
-<!--Other non-gif pic src="https://goo.gl/g922mK"-->
-</div>
-  </div>
-  </div>
-  </section>
+</header>
+
+
+
 
  <!--Beginning of Projects Section-->
 
@@ -101,41 +60,44 @@
 <!--First Project Website-->
 <section id="" class="singleprojects col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="work-project">
+      <a href="https://github.com/rogercodes1/Property-Pal" class="img-responsive" target="_blank">
       <div class="project-image-container">
         <div class="project-image">
         <img src="images/indexResume.jpg" class="image">
         </div>
         <div class="middle">
           <div class="viewproject">
-            <a href="index.html" class="img-responsive text-color: white">View Project </a>
+            View Project
           </div>
         </div>
       </div>
-
-      <div class="project-title">Resume Homepage Website</div>
-      <div class="project-description">Created a Resume homepage dedicated to provide supplemental work not found on a pdf version.  </div>
-      <div class="project-languages"><footer>HTML | CSS</footer></div>
+  </a>
+      <div class="project-title">Property Pal</div>
+      <div class="project-description">Built a web app using Ruby on Rails. Specializing in using CRUD and RESTful principles.</div>
+      <div class="project-languages"><footer>HTML | CSS | Ruby (on Rails) | Bootstrap |RESTful</footer></div>
     </div>
   </section>
 
  <!--Second Project Random Quote generator-->
  <section id="" class="singleprojects col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
     <div class="work-project">
-      <div class="project-image-container">
-        <div class="project-image">
-        <img src="images/quoteGenerator.jpg" class="image">
-        </div>
-        <div class="middle">
-          <div class="viewproject">
-            <a href="quoteGenerator.html" class="color: white">View Project</a>
+      <a href="quoteGenerator.html">
+          <div class="project-image-container">
+            <div class="project-image">
+            <img src="images/quoteGenerator.jpg" class="image">
+            </div>
+            <div class="middle">
+              <div class="viewproject">
+                View Project
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+      </a>
 
       <div class="project-title">Random Quote Generator </div>
       <div class="project-description">Generates random quotes and provides the ability to share the quote on your Twitter account.</div>
         <div class="project-languages">
-          <footer>HTML | CSS | JavaScrip | JSON</footer>
+          <footer>HTML | CSS | JavaScript | JSON</footer>
         </div>
     </div>
   </section>
@@ -143,14 +105,20 @@
 <!--3rd project Digital Analog Clock-->
  <section id="" class="singleprojects col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="work-project">
+      <a href="analogClock.html" >
       <div class="project-image-container">
      <div class="project-image">
        <img src="images/analogClock.jpg" class="image">
       </div>
-        <div class="middle"><div class="viewproject">
-          <a href="analogClock.html" class="color: white">View Project </a></div>
+        <div class="middle">
+          <div class="viewproject">
+
+            View Project
+          </div>
     </div>
         </div>
+
+        </a>
       <div class="project-title">Digital Analog Clock (In Progress) </div>
       <div class="project-description">Analog Digital Clock with military time displayed at the bottom. Future update will include time zone times (In Progress)</div>
       <div class="project-languages">
@@ -221,12 +189,14 @@
 </div>
   </div>
 </section>
-<section class="contact">
+
+<footer>
+<!-- <section class="contact"> -->
 <div  class="container-fluid">
   <div class="row">
 
-<div class="col-md-6 col-sm-6 col-xs-12">
-    <h1 class=""> Keep Connected</h1>
+<div class="col-md-6 col-sm-6 col-xs-12 ">
+    <h1> Keep Connected</h1>
 
   <div id="socialicons">
 
@@ -246,9 +216,9 @@
 
 </div>
   </div>
-</section>
+<!-- </section> -->
 
-  <footer>
+
       <p>Copyright 2017 by Roger Perez</p>
   </footer>
 
