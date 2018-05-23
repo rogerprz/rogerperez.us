@@ -30,15 +30,19 @@ body{
   margin-left:10%; */
 }
 #calcContainer{
-  width:60%;
-  margin-left:33%;
+  /* display:block;
+  margin-left:auto;
+  margin-right: auto; */
+  /* width:60%;
+  margin-left:33%; */
 }
 
 #calcBox{
   background-color: white;
   padding: 20px 30px;
   border: 10px black solid;
-  max-width: 50%;
+  width: 340px;
+
   /* padding-right: 20%; */
   /* padding-left: 20%; */
   /* position:absolute; */
@@ -47,7 +51,7 @@ body{
 #buttonsList{
   /* position:absolute; */
   margin:20px 10px;
-  width:100%;
+  /* width:100%; */
 }
 
 
