@@ -23,20 +23,9 @@ header h1, header h2 {
 }
 body{
   background-color:#0F326E
-  /* width:60%;
-   position:center;
-  padding-right: 20%;
-  padding-left: 10%;
-  margin-left:10%; */
-}
-/* #calcContainer{
-  display:block;
-  margin-left:auto;
-  margin-right: auto;
-  /* width:50%; */
-  /* margin-left:35%;
 
-} */
+}
+
 
 #calcBox{
   background-color: white;
@@ -45,19 +34,11 @@ body{
   width: 380px;
   height: 500px;
   display:block;
-
   margin-left:auto;
   margin-right: auto;
-
-  /* padding-right: 20%; */
-  /* padding-left: 20%; */
-  /* position:absolute; */
-  /* max-height:500px */
 }
 #buttonsList{
-  /* position:absolute; */
   margin:20px 10px;
-  /* width:100%; */
 }
 button:active {
   transform: translate(0px, 3px);
@@ -75,24 +56,17 @@ button:active {
   height: 45px;
   width: 55px;
   padding-left:5px;
-  /* padding:auto 5px; */
 }
-/* .cButton{
-  width:22%;
-  padding:auto 5px;
-  padding:5px;
-} */
+
 #display{
-  /* padding-top:10%; */
   height:45px;
   text-align: right;
   font-size: 32px;
   margin-top:20px;
-  /* padding-left: 5%; */
-  /* margin-right:5%; */
-  /* padding-right: 5%; */
+
   background-color: rgb(130, 135, 118,.8)
 }
+
 /* Navigation
 -------------------------*/
 nav {
