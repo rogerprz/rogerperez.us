@@ -23,7 +23,7 @@ let buttonsArray = [
   "0",
   ".",
   "%"]
-let columns = "col-lg-3 col-md-3 col-sm-3"
+let columns = "col-lg-3 col-md-3 col-sm-3 col-xs-3"
 let buttonsList = document.getElementById("buttonsList")
 let display = document.getElementById("display")
 
