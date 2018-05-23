@@ -1,4 +1,4 @@
-var lon, lan;
+let lon, lan;
 var example='http://api.wunderground.com/api/8a8af55ae16c8627/geolookup/q/34.4277882,-119.7034209.json'; //Examples of completed coordinates
 var exampleCity="http://api.wunderground.com/api/8a8af55ae16c8627/conditions/q/CA/Santa_Barbara.json"; //example City.
 var geoLocal = document.getElementById("geoLocal");
