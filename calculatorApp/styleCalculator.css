@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1{
+  padding-top: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header{
+  background: #0F326E;
+  color: #8D99AE;
+  padding-top:50px;
+  position:relative;
+}
+header h1, header h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+body{
+  /* width:60%;
+   position:center;
+  padding-right: 20%;
+  padding-left: 10%;
+  margin-left:10%; */
+}
+#calcContainer{
+  width:60%;
+  margin-left:33%;
+}
+
+#calcBox{
+  background-color: red;
+  padding: 20px 30px;
+  border: 10px black solid;
+  max-width: 50%;
+  /* padding-right: 20%; */
+  /* padding-left: 20%; */
+  /* position:absolute; */
+  /* max-height:500px */
+}
+#buttonsList{
+  /* position:absolute; */
+  margin:20px 10px;
+  width:100%;
+}
+
+
+.sButt{
+  font-size: 32px;
+  color: red;
+  width:20%
+  margin:4px;
+  /* padding:auto 5px; */
+}
+/* .cButton{
+  width:22%;
+  padding:auto 5px;
+  padding:5px;
+} */
+#display{
+  /* padding-top:10%; */
+  height:45px;
+  text-align: right;
+  font-size: 32px;
+  margin-top:20px;
+  /* padding-left: 5%; */
+  /* margin-right:5%; */
+  /* padding-right: 5%; */
+  background-color: rgb(130, 135, 118,.8)
+}
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+    text-decoration: none;
+}
