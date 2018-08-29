@@ -6,7 +6,17 @@
 #EDF2F4 - blue/white
 #EF233C - red
 */
-
+.my-column{
+  color:white;
+}
+.my-name{
+  font-size: 3em;
+  display: block;
+}
+.my-headline{
+  font-size: 2em;
+  display: block;
+}
 /* Global styles
 ------------------------------------*/
 /* border box fix -/* apply a natural box layout model to all elements, but allowing components to change */
