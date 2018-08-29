@@ -8,13 +8,15 @@
 */
 .my-column{
   color:white;
+  font-family: 'Caveat', cursive;
+
 }
 .my-name{
-  font-size: 3em;
+  font-size: 4em;
   display: block;
 }
 .my-headline{
-  font-size: 2em;
+  font-size: 3em;
   display: block;
 }
 /* Global styles
