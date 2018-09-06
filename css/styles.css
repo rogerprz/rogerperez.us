@@ -102,7 +102,6 @@ header {
 .profile-img {
   border-radius: 50%;
   animation: moveInLeft 1.5s ease-out;
-
 }
 .download {
   position: absolute;
