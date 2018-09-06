@@ -20,7 +20,10 @@
   font-size: 3em;
   display: block;
 }
+#headline-description{
+  animation: moveInBottom 1.5s ease-out;
 
+}
 
 /* Global styles
 ------------------------------------*/
