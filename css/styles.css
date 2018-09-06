@@ -14,10 +14,27 @@
 .my-name{
   font-size: 4em;
   display: block;
+  
 }
 .my-headline{
   font-size: 3em;
   display: block;
+}
+
+@keyframes moveInRight {
+  /* 0% what happens at beginning */
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80%{
+    transform: translateX(-20px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 /* Global styles
 ------------------------------------*/
