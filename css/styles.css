@@ -63,6 +63,7 @@ a:hover {
   margin: 0 auto;
   padding:40px 30px;
   overflow: hidden;
+
 }
 .uppercase {
   text-transform: uppercase;
@@ -221,6 +222,24 @@ p + h3 {
   }
 }
 
+@keyframes moveInLeft {
+  /* 0% what happens at beginning */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  /* 60%{
+    transform: rotate(120deg);
+  } */
+  80%{
+    transform: translateX(20px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 /* Media Queries
 -------------------------*/
 @media (min-width: 900px) {
