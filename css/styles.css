@@ -9,12 +9,12 @@
 .my-column{
   color:white;
   font-family: 'Caveat', cursive;
+  animation: moveInRight 1.5s ease-out;
 
 }
 .my-name{
   font-size: 4em;
   display: block;
-  
 }
 .my-headline{
   font-size: 3em;
