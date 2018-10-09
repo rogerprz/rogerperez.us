@@ -255,6 +255,7 @@ p + h3 {
     padding-left: 40px;
   }
 
+
 }
 @media (max-width: 899px){
   header {
@@ -263,5 +264,21 @@ p + h3 {
   .profile-img {
     width: 300px;
     /* height: 400px; */
+  }
+  .content-wrap{
+    padding:50px 30px 60px 30px;
+  }
+
+}
+@media (max-width: 800px) {
+  .content-wrap{
+    padding:100px 30px 60px 30px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .content-wrap{
+    padding:150px 30px 60px 30px;
   }
 }
