@@ -274,6 +274,12 @@ p + h3 {
   .content-wrap{
     padding:100px 30px 60px 30px;
   }
+  .download {
+    position: absolute;
+    bottom: 21px;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 
