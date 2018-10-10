@@ -79,7 +79,7 @@ header h1, header h2 {
 }
 
 /* Start of project cards */
-.project-section-new{
+.project-card{
   text-align: center;
   width: 350px;
   height: 400px;
