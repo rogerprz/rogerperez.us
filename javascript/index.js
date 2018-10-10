@@ -1,14 +1,19 @@
 console.log("hello there");
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+    $(function() {
+    	//caches a jQuery object containing the header element
+    	const navbar = $('#navbar-id');
+      let oNav = document.getElementById("navbar-id")
+    	$(window).scroll(function() {
+    		let scroll = $(window).scrollTop();
+    		if (scroll >= navbar.height()) {
+          // debugger
+    			navbar.fadeOut("slow");
+    		} else {
+    			navbar.fadeIn("slow");
+    		}
+    	});
+    });
 
-$(function() {
-	//caches a jQuery object containing the header element
-	var header = $('#nav');
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-		if (scroll >= header.height()) {
-			header.fadeOut();
-		} else {
-			header.fadeIn();
-		}
-	});
-});
+  });
