@@ -67,23 +67,29 @@ header h1, header h2 {
 
 /*Beginning of projects CSS */
 #portfolio {
-  padding:50px;
-  margin:auto;
+  padding: 50px;
+  margin: auto;
   height:100%;
   color: #EDF2F4;
   background-color:#0F326E;
 }
 #projectsection{
-  margin:auto;
+  margin: auto;
   font-color:#EDF2F4 ;
 }
 
 /* Start of project cards */
+
+.project-heading{
+  height: auto;
+  padding:10px 0px 80px 0px;
+}
+
 .project-card{
   text-align: center;
   width: 350px;
   height: 400px;
-  margin: auto 20px;
+  margin: auto 30px;
   position: relative;
   padding: 0;
 
@@ -110,20 +116,29 @@ header h1, header h2 {
   padding: 16px 32px;
 }
 
-.project-image-cont1:hover .view-project-details {
+.project-image-cont:hover .view-project-details {
   opacity: 1;
 }
-.project-image-cont1:hover{
+.project-image-cont:hover{
 
   background-color:#0F326E;
   opacity: .7;
 }
-.project-heading{
-  height:auto;
-  padding:10px 0px 80px 0px;
+
+/*old section project code  */
+
+.singleprojects{
+  margin:auto;
+  left:4%;
+  /*max-width: 350px;*/
+  height: 100%;
+  text-align: center;
+  font:center;
 }
 
-
+.work-project{
+  max-width:350px;
+}
 
 .image{
   width: 100%;
@@ -165,41 +180,9 @@ header h1, header h2 {
   opacity: 0.3;
 }
 
-.viewproject {
-  background-color: white;
-  font-color: black;
-  text-align: center;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-.project-title{
-  /* text-transform: uppercase; */
-  font-size: 1.1em;
-  font-weight: bold;
-  letter-spacing: 1.2px;
-  padding:5px 0px 10px 0px;
-  font: bold;
-}
-.project-description{
-  font-family: Sans-serif;
-  font-size: 15px;
-  padding:10px;
-  height:125px;
-}
-.project-languages{
-  padding:5px 0px 15px 0px;
-  color: grey;
-  font-size: 13px;
-}
 
-/*Contact Section begins*/
-/* .contact {
-  padding:50px;
-  height:100%;
-  color: #fff;
-  background-color:
-    #2B2B2B;
-} */
+
+
 /* Footer styles only */
 footer {
   text-align: center;
@@ -262,30 +245,7 @@ div > a:hover{
 
 
 
-@media (max-width: 899px){
-  header {
-    text-align: center;
-  }
-  #myPhoto {
-    width: 400px;
-  }
-}
-@media (max-width: 400px){
-  header {
-    text-align: center;
-  }
-  #myPhoto {
-    width: 300px;
-  }
-}
-@media (max-width: 300px){
-  header {
-    text-align: center;
-  }
-  #myPhoto {
-    width: 200px;
-  }
-}
+
 /* Navigation
 -------------------------*/
 nav {
