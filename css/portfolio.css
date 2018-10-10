@@ -22,11 +22,10 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
-h3 {
-  margin: 0;
-}
+
 a {
   color: #EF233C;
+  font-size: 1.1em;
 }
 a:hover {
     text-decoration: none;
@@ -115,6 +114,10 @@ header h1, header h2 {
   transform: translate(-50%, -50%);
   padding: 16px 32px;
 }
+.project-image{
+  width: 100%;
+  height: 100%;
+}
 
 .project-image-cont:hover .view-project-details {
   opacity: 1;
@@ -124,63 +127,6 @@ header h1, header h2 {
   background-color:#0F326E;
   opacity: .7;
 }
-
-/*old section project code  */
-
-.singleprojects{
-  margin:auto;
-  left:4%;
-  /*max-width: 350px;*/
-  height: 100%;
-  text-align: center;
-  font:center;
-}
-
-.work-project{
-  max-width:350px;
-}
-
-.image{
-  width: 100%;
-  height: 100%;
-}
-.project-image-container{
-  border: 5px solid #3B3738;
-  /* background-color: white; */
-  height: 200px;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 30%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  /* -ms-transform: translate(-50%, -50%) */
-}
-.project-image{
-  opacity: .8;
-  width: 100%;
-  height: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-/* .viewproject {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-} */
-
-.project-image:hover .image{
-  opacity: 0.8;
-}
-.work-project:hover .middle {
-  opacity: 0.3;
-}
-
-
 
 
 /* Footer styles only */
