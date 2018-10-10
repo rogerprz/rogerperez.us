@@ -43,7 +43,9 @@ header h1, header h2 {
     margin: 0;
 }
 
-
+.row{
+  vertical-align: middle;
+}
 
 #pabout{
   text-align:justify;
@@ -72,9 +74,15 @@ header h1, header h2 {
   color: #EDF2F4;
   background-color:#0F326E;
 }
-#projectsection{
-  margin: auto;
+.projects-section{
   font-color:#EDF2F4 ;
+}
+.projects-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: auto auto auto; */
+
 }
 
 /* Start of project cards */
