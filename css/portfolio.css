@@ -83,13 +83,12 @@ header h1, header h2 {
   text-align: center;
   width: 350px;
   height: 400px;
-  /* background-color: red; */
   margin: auto 20px;
   position: relative;
   padding: 0;
 
 }
-.project-image-cont1{
+.project-image-cont{
   width: 350px;
   height: 195px;
 }
