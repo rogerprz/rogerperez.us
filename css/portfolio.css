@@ -25,7 +25,7 @@ h2 {
 
 a {
   color: #EF233C;
-  font-size: 1.1em;
+  font-size: 16px;
 }
 a:hover {
     text-decoration: none;
@@ -35,7 +35,7 @@ a:hover {
 header{
   background: #0F326E;
   color: #8D99AE;
-  padding-top:50px;
+  padding-top:40px;
   position:relative;
 }
 header h1, header h2 {
@@ -43,9 +43,7 @@ header h1, header h2 {
     margin: 0;
 }
 
-.row{
-  vertical-align: middle;
-}
+
 
 #pabout{
   text-align:justify;
@@ -67,17 +65,16 @@ header h1, header h2 {
 }
 
 /*Beginning of projects CSS */
-#portfolio {
-  padding: 50px;
-  margin: auto;
-  height:100%;
-  color: #EDF2F4;
-  background-color:#0F326E;
-}
+
 .projects-section{
   font-color:#EDF2F4 ;
+  background-color:#0F326E;
+
 }
 .projects-div{
+  padding: 50px;
+  height:100%;
+  color: #EDF2F4;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,7 +86,8 @@ header h1, header h2 {
 
 .project-heading{
   height: auto;
-  padding:10px 0px 80px 0px;
+  padding:50px 0px 20px 0px;
+  color: #EDF2F4;
 }
 
 .project-card{
