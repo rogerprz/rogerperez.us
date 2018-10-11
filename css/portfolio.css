@@ -209,6 +209,20 @@ div > a:hover{
   width: 80%;
 }
 
+/* Media Queries */
+@media (max-width: 800px) {
+  .project-heading{
+    padding:70px 0px 20px 0px;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  .project-heading{
+    padding:130px 0px 20px 0px;
+  }
+}
 
 
 
