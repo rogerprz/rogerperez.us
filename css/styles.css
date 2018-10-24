@@ -296,6 +296,10 @@ p + h3 {
 
 @media (max-width: 450px) {
   .content-wrap{
-    padding:150px 30px 60px 30px;
+    padding:100px 30px 80px 30px;
   }
+  nav a{
+    text-align: left;
+  }
+
 }
