@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // const listDiv = document.getElementById("buttonList");
-  // const app = new TaskLister();
-});
-
 let buttonsArray = [
   "AC",
   "CE",
@@ -73,6 +68,5 @@ buttonsList.addEventListener('click', function(e){
     display.innerText+=selection
 
   }
-  // debugger;
-  // body...
+
 });
