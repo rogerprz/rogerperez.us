@@ -1,4 +1,3 @@
-console.log("hello there");
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
     $(function() {
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     	$(window).scroll(function() {
     		let scroll = $(window).scrollTop();
     		if (scroll >= navbar.height()) {
-          // debugger
     			navbar.fadeOut("slow");
     		} else {
     			navbar.fadeIn("slow");
